@@ -1,0 +1,42 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 5rem;
+  margin-top: 2.5rem;
+
+  @media only screen and(max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
+  @media only screen and(max-width: $bp-small) {
+    grid-template-columns: 1fr;
+  }
+  &__img {
+    width: 100%;
+    @media only screen and(max-width: $bp-medium) {
+      height: 30rem;
+    }
+
+    &--author {
+      width: 4.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    color: $color-grey-light-2;
+  }
+
+  &__author {
+    display: flex;
+    margin-top: 1.5rem;
+    align-items: center;
+
+    img {
+      margin-right: 1rem;
+    }
+
+    p {
+      color: $color-grey-light-2;
+    }
+  }
+}

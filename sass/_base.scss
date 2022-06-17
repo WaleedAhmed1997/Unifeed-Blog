@@ -1,0 +1,30 @@
+// COLOR VARIABLES
+$color-primary: #e97f44;
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #888;
+
+$font-primary: "Roboto", sans-serif;
+
+$bp-large: 75em; // 1200px/16 = 75em
+$bp-medium: 56em; // 900px/16 = 56em
+$bp-small: 37.5em; // 600px/16em = 37.5em
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and(max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+  background-color: $color-grey-light-1;
+}

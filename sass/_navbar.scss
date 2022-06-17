@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  &__logo {
+    align-self: center;
+  }
+
+  &__menu {
+    visibility: hidden;
+
+    @media only screen and(max-width: $bp-small) {
+      visibility: visible;
+    }
+  }
+
+  &__items {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+    @media only screen and(max-width: $bp-small) {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-grey-light-2;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+  }
+}
